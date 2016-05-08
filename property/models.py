@@ -33,3 +33,6 @@ class Property(models.Model):
         function returns unicode representation of a property
         """
         return self.title
+
+    class Meta:
+        verbose_name_plural = "properties"
