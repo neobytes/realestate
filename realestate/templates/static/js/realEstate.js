@@ -20,3 +20,8 @@ angular
 	$scope.message = "Real Estate Project By NeoBytes";
 
 }); // controller ends here !!!!!!
+
+myApp.config(function($interpolateProvider) {
+  $interpolateProvider.startSymbol('[[');
+  $interpolateProvider.endSymbol(']]');
+});
