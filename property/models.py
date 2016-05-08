@@ -27,3 +27,9 @@ class Property(models.Model):
     # time stamps !
     created_at = models.DateTimeField(auto_now_add=True, verbose_name=_('Created'))
     last_modified = models.DateTimeField(auto_now=True, verbose_name=_('Last Modified'))
+
+    def __unicode__(self):
+        """
+        function returns unicode representation of a property
+        """
+        return self.title
