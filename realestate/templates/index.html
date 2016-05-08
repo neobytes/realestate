@@ -10,16 +10,16 @@
 <table class="table" border="0" cellspacing="5" cellpadding="5" width="100%">
     <tr class="info">
         <td><b>#</b></td>
-        <td><b>Project</b></td>
+        <td><b>Property</b></td>
         <td><b>Created By</b></td>
         <td><b>Start Date</b></td>
     </tr>
-    {% for project in projects %}
+    {% for property in propertys %}
     <tr>
         <td>{{ forloop.counter }}</td>
-        <td><a href="/project/{{ project.id }}">{{ project.title }}</a></td>
-        <td>{{ project.owner }}</td>
-        <td>{{ project.start_date }}</td>
+        <td><a href="/property/{{ property.id }}">{{ property.title }}</a></td>
+        <td>{{ property.owner }}</td>
+        <td>{{ property.start_date }}</td>
     </tr>
     {% endfor %}
 </table>
