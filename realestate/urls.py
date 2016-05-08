@@ -21,6 +21,6 @@ urlpatterns = [
     url(r'^$', 'property.views.home', name='home'),
 
     # properties
-    url(r'property/(\d+)$', 'work.views.property', name='property'),
-    url(r'^save_property/$', 'work.views.save_property', name='save_property'),
+    url(r'property/(\d+)$', 'property.views.property', name='property'),
+    url(r'^save_property/$', 'property.views.save_property', name='save_property'),
 ]
