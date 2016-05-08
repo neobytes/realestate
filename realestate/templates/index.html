@@ -2,24 +2,28 @@
 {% load staticfiles %}
 
 {% block head %}
-<title>Real Estate - Home</title>
+<title>{{ message }}</title>
 {% endblock %}
 
 {% block body %}
+
+<center><h3>{{ message }}</h3></center>
 
 <table class="table" border="0" cellspacing="5" cellpadding="5" width="100%">
     <tr class="info">
         <td><b>#</b></td>
         <td><b>Property</b></td>
-        <td><b>Created By</b></td>
-        <td><b>Start Date</b></td>
+        <td><b>Owner</b></td>
+        <td><b>Price</b></td>
+        <td><b>Available</b></td>
     </tr>
-    {% for property in propertys %}
+    {% for property in properties %}
     <tr>
         <td>{{ forloop.counter }}</td>
         <td><a href="/property/{{ property.id }}">{{ property.title }}</a></td>
         <td>{{ property.owner }}</td>
-        <td>{{ property.start_date }}</td>
+        <td>{{ property.price }}</td>
+        <td>{{ property.available }}</td>
     </tr>
     {% endfor %}
 </table>

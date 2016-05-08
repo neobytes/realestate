@@ -8,10 +8,12 @@
         <link rel="stylesheet" type="text/css" href={% static "css/style.css" %}>
         <script src={% static "js/jquery.min.js" %}></script>
         <script src={% static "js/bootstrap.min.js" %}></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src={% static "js/realEstate.js" %}></script>
 
 {% block head %}{% endblock %}
     </head>
-    <body bgcolor="#ccddcc">
+<body ng-app="rsModule">
 
         <!-- Navbar starts here here -->
         <nav class="navbar navbar-default">
