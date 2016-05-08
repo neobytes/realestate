@@ -3,8 +3,13 @@ from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 
+from property.models import Property
+
 def home(request):	
-    return render_to_response("index.html")
+    properties = Property.objects.all()
+    c = {'properties': properties}
+    #c.update(d)
+    return render_to_response('index.html', c)
 
 @csrf_exempt
 @login_required
@@ -30,9 +35,9 @@ def property(request, property_id):
     """
     get all tasks for given property
     """
-    property = Property.objects.get(id=property_id)
+    properties = Property.objects.get(id=property_id)
     c = get_common_dict(request)
-    d = {'property': property, 'tasks': property.get_tasks()}
+    d = {'properties': properties}
     c.update(d)
     return render_to_response('tasks.html', c)
 
