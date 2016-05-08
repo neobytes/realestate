@@ -33,6 +33,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # NOTE:third party apps grappelli should be added before adding admin
+    'grappelli',
+
     'property.apps.PropertyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
