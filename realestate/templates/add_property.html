@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+<title>{{ message }}</title>
+{% endblock %}
+
+{% block content %}
+
+	<div style='background: rgb(212, 228, 212);width: 645px;height:400px;margin-left: 225px; border:1px solid #550500;'>
+		<div style='background: rgb(178, 192, 178);width: 636px;height:29px;margin-left:4px;'><center><p style='font-size:20px;'>Add Property Form</p></center></div>
+	 <form role="form">
+  		<div class="form-group">
+    		<label for="title" style='margin-left:111px;'>Title : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="title">
+  		</div>
+  		<div class="form-group">
+    		<label for="descrip" style='margin-left:70px;'>Description : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:250px;' id="descrip">
+  		</div>
+		<div class="form-group">
+    		<label for="price" style='margin-left:112px;'>Price : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="price">
+  		</div>
+		<div class="form-group">
+    		<label for="avail" style='margin-left:84px;'>Available : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="avail">
+  		</div>
+		<div class="form-group">
+    		<label for="bath" style='margin-left:78px;'>Bathrooms : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="bath">
+  		</div>
+		<div class="form-group">
+    		<label for="parking" style='margin-left:99px;'>Parking : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="parking">
+  		</div>
+		<div class="form-group">
+    		<label for="rooms" style='margin-left:109px;'>rooms : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="rooms">
+  		</div>
+		<div class="form-group">
+    		<label for="floor" style='margin-left:114px;'>Floor : </label>
+    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="floor">
+  		</div>
+  			<button type="submit" class="btn btn-default" style='margin-left:238px;margin-top:31px;'>Submit</button>
+		</form>
+
+	</div>
+
+{% endblock %}

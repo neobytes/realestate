@@ -1,36 +1,110 @@
-#page-container {
-    width: 1200px;
-    margin: auto;
-    background: #ffffff;
-    padding: 10px;
+/* CSS Document */
+body
+{
+	margin:0px;
+	padding:0px;
+	background-color:#1d2b31;
 }
-
-
-#main-nav{
-    padding-top: 25px;
-    height: 90px;
+#main
+{
+	width:800px;
+	overflow:hidden;
+	background-color:#FFFFFF
 }
-
-
-#header{
-    background: white;
-    width: 960px;
-    margin: center;
-    height: 150px;
+#header1
+{
+	width:270px;
+	height:115px;
+	float:left;
+	padding-left:20px;
 }
-
-
-#content{
-    margin-top: 10px;
-    width: 960px;
+#header2
+{
+	width:500px;
+	height:115px;
+	float:left;
 }
-
-
-#footer{
-    clear: both;
-    margin: auto;
-    background: #777799;
-    height: 60px;;
-    border-radius: 10px;
-    width: 1180px;
+#header
+{
+	width:800px;
+	height:120px;
+	background:url(../images/header_strip.jpg) repeat-x;
+}
+#logo
+{
+	background:url(../images/logo.jpg) no-repeat;
+	width:230px;
+	height:37px;
+	float:left;
+	margin-top:30px;
+}
+#header_image
+{
+	width:800px;
+	height:239px;
+	border-bottom:#666666 1px solid;
+	border-top:#666666 1px solid;
+	padding-left:20px;
+	padding-right:15px;
+}
+.links ul
+{
+	width:100px;
+	height:20px;
+	display:inline;
+	list-style-type:none;
+}
+.links ul li
+{
+	display:inline;
+	line-height:50px;
+	padding-left:10px;
+}
+#header_image1
+{
+	width:450px;
+	height:211px;
+	background:url(../images/house.jpg) no-repeat;
+	float:left;
+	margin-top:15px;
+}
+#header_image2
+{
+	width:330px;
+	height:239px;
+	float:right;
+	border-left:1px solid #666666;
+}
+#header_top
+{
+	width:249px;
+	height:99px;
+	margin-top:15px;
+	padding-right:15
+	float:right
+}
+#header_bottom
+{
+	width:249px;
+	height:99px;
+	margin-top:10px;
+	padding-right:15
+	float:right
+}
+#content
+{
+	width:800px;
+	background-color:#FFFFFF;
+}
+#content1
+{
+	width:189px;
+	background-color:#999999;
+	float:left;
+}
+#content2
+{
+	width:550px;
+	background-color:#999999;
+	float:right;
 }

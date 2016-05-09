@@ -23,5 +23,6 @@ urlpatterns = [
 
     # properties
     url(r'property/(\d+)$', 'property.views.property', name='property'),
-    url(r'^save_property/$', 'property.views.save_property', name='save_property'),
+    url(r'^save_property/$', 'property.views.save_property', name='save_property'),	
+	url(r'^add_property/$', 'property.views.add_property', name='add_property'),
 ]

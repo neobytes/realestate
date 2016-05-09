@@ -11,6 +11,12 @@ def home(request):
     #c.update(d)
     return render_to_response('index.html', c)
 
+
+
+def add_property(request):
+	print('add property')
+	return render_to_response('add_property.html')
+
 @csrf_exempt
 @login_required
 def save_property(request):

@@ -21,6 +21,10 @@ angular
 
 }); // controller ends here !!!!!!
 
+//----------------------------------------------------------------------------
+// to avoid conflicts with django {{ }} brackets,
+// we will be using [[ ]] for angular js expressions
+//----------------------------------------------------------------------------
 myApp.config(function($interpolateProvider) {
   $interpolateProvider.startSymbol('[[');
   $interpolateProvider.endSymbol(']]');
