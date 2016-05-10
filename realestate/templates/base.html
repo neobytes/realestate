@@ -4,7 +4,9 @@
 <head>
 <title>Real Estate</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link href="css/style1.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href={% static "css/style1.css" %}/>
 </head>
 <body>
@@ -15,10 +17,11 @@
       <div id="container">
         <div id="mainmenu">
           <ul>
-            <li><a class="current a" >&nbsp;Home&nbsp;</a></li>
-            <li><a href="subpage.html" class="a">About Us</a></li>
-            <li><a  class="a">Rentals</a></li>
-            <li><a  class="a">Moving</a></li><a class="a">Contact Us</a></li>
+            <li><a class="current a" href='/' >&nbsp;Home&nbsp;</a></li>
+            <li><a  class="a" href='/about/'>About Us</a></li>
+            <li><a  class="a" href='/rental/'>Rentals</a></li>
+            <li><a  class="a" href='/moving/'>Moving</a></li>
+			<li><a  class="a" href='/contact/'>Contact Us</a></li>
           </ul>
         </div>
       </div>
