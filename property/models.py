@@ -20,7 +20,7 @@ class Property(models.Model):
     floor = models.PositiveIntegerField(_('Floor'), default=0, null=True, blank=True)
 
     # area of property in square meters
-    area = models.PositiveIntegerField(_('Area)'), default=0, null=True, blank=True)
+    area = models.PositiveIntegerField(_('Area'), default=0, null=True, blank=True)
 
     owner = models.ForeignKey(User)
 

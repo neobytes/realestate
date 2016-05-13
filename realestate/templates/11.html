@@ -8,43 +8,49 @@
 {% block content %}
 
 	<div style='background: rgb(212, 228, 212);width: 645px;height:500px;margin-left: 225px; border:1px solid #550500;'>
-		<div style='background: rgb(178, 192, 178);width: 636px;height:29px;margin-left:4px;'><center><p style='font-size:20px;'>Add Property Form</p></center></div>
-	 <form role="form">
-  		<div class="form-group">
-    		<label for="title" style='margin-left:111px;'>Title : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="title">
-  		</div>
-  		<div class="form-group">
-    		<label for="descrip" style='margin-left:70px;'>Description : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:250px;' id="descrip">
-  		</div>
-		<div class="form-group">
-    		<label for="price" style='margin-left:112px;'>Price : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="price">
-  		</div>
-		<div class="form-group">
-    		<label for="avail" style='margin-left:84px;'>Available : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="avail">
-  		</div>
-		<div class="form-group">
-    		<label for="bath" style='margin-left:78px;'>Bathrooms : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="bath">
-  		</div>
-		<div class="form-group">
-    		<label for="parking" style='margin-left:99px;'>Parking : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="parking">
-  		</div>
-		<div class="form-group">
-    		<label for="rooms" style='margin-left:109px;'>rooms : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="rooms">
-  		</div>
-		<div class="form-group">
-    		<label for="floor" style='margin-left:114px;'>Floor : </label>
-    		<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="floor">
-  		</div>
-  			<button type="submit" class="btn btn-default" style='margin-left:238px;margin-top:31px;'>Submit</button>
-		</form>
-
+		<div style='background: rgb(178, 192, 178);width: 636px;height:29px;margin-left:4px;float:left;'><center><p style='font-size:20px;'>Add Property Form</p></center></div>
+	
+			 <form role="form">
+  				<table>
+					<tr>
+    				<td align='right' width='30%'><label for="title" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Title : </label>
+					</td>
+					<td>    				
+					<input type="text" class="form-control form-in" width='70%' style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="title"></input>
+					</td>
+					</tr>
+					<tr>
+						<td align='right' ><label for="descrip" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Description : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="descrip"></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="price" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Price : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="price"></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="avail" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Available : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="avail"></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="bath" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Bathrooms : </label></td>
+	    				<td><input type="text" class="form-control form-in"  style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="bath"></input></td>
+					</tr>
+				<tr>
+						<td align='right'><label for="parking" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Parking : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="parking"></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="rooms" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>rooms : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="rooms"></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="floor" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Floor : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;' id="floor"></input></td>
+					</tr>
+					<tr><td align='center'> <button type="submit" class="btn btn-default" style='margin-left:278px;'>Submit</button>
+  		    		</td></tr>
+  				</table>    				
+			 </form>				
 	</div>
 
 {% endblock %}

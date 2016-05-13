@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+<title>{{ message }}</title>
+{% endblock %}
+
+{% block headerimage %}
+  <div class="headerimage">
+    <div class="headeriamge1">
+      <div class="house"></div>
+    </div>
+    <div class="headerimage2">
+      <div class="buying"><a href="/buying/"> <img src="/static/images/buyin.png" border="0" /></a> </div>
+      <div class="selling"><a href="/selling/"> <img src="/static/images/selling.png" border="0" /></a> </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+   
+
+
+    <div class="innercontent">
+      <div class="leftpannel">
+        <div class="find">
+          <div class="leftpan1"></div>
+          <div class="leftpan2">
+            <div class="leftmenu">
+              <ul>
+                <li><a href="/homeforsale/">Home for sale</a></li>
+                <li><a href="/fore/">Fore closures</a></li>
+                <li><a href="/lotsandland/">Lots and Land</a></li>
+                <li><a href="/agent/">Agents and Brokers</a></li>
+                <li><a href="/mortages/">Mortages</a></li>
+                <li><a href="/freehomeplans/">Free home plans</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="search">
+          <div class="search1"></div>
+          <div class="go">
+            <div>
+              <input type="text" />
+            </div>
+            <div class="go1"><a onclick="/go/"><img src="/static/images/go.gif" border="0" /></a></div>
+          </div>
+        </div>
+        <div>
+          <div style="width:190px; height:31px; background:url(/static/images/find.gif) repeat-x;"></div>
+          <div style="background-color:#fffbf0; padding-top:15px; height:auto"><img src="/static/images/add.jpg" width="181" height="81" /></div>
+        </div>
+      </div>
+      <div class="rightpannel">
+        <div class="welcome">
+          <div style="width:200px; height:30px; padding-bottom:5px"><img src="/static/images/welcome.jpg" width="202" height="24" /></div>
+          <div style="width:760px; height:auto;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#3f3f3f; line-height:20px; text-align:left">All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footers All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footersincluding margins, number of columns, line numbers, page size and orientation, and headers and footers  and orientation, and headers and footers</div>
+        </div>
+        <div class="featured">&nbsp;</div>
+        <div class="featured1">
+          <div class="featuredinner">
+            <div class="fealeft"><a href="/feature/"><img src="/static/images/home.png" /></a></div>
+            <div class="fearight"><span style="width:780px; height:auto;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#3f3f3f; line-height:20px; text-align:left">All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footers All the formatting for the section that precedes it.All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footers All the formatting for the section that precedes</span></div>
+          </div>
+        </div>
+        <div class="featured1">
+          <div class="featuredinner">
+            <div class="fealeft"><a href="/feature/"><img src="/static/images/house2.png" width="108" height="76" /></a></div>
+            <div class="fearight"><span style="width:780px; height:auto;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#3f3f3f; line-height:20px; text-align:left">All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footers All the formatting for the section that precedes it.All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footers All the formatting for the section that precedes</span></div>
+          </div>
+        </div>
+        <div class="featured1">
+          <div class="featuredinner">
+            <div class="fealeft"><a href="/feature/"><img src="/static/images/house3.png" width="108" height="76" /></a></div>
+            <div class="fearight"><span style="width:780px; height:auto;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#3f3f3f; line-height:20px; text-align:left">All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footers All the formatting for the section that precedes it.All the formatting for the section that precedes it, including margins, number of columns, line numbers, page size and orientation, and headers and footers All the formatting for the section that precedes</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

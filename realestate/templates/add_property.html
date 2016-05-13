@@ -7,17 +7,56 @@
 
 {% block content %}
 
-	<div style='background: rgb(212, 228, 212);width: 645px;height:500px;margin-left: 225px; border:1px solid #550500;'>
-		<div style='background: rgb(178, 192, 178);width: 636px;height:29px;margin-left:4px;'><center><p style='font-size:20px;'>Add Property Form</p></center></div>
-	 <form role="form">
-			<div style='width:500px;height:400px;'>
-  				<div class="form-group">
-    				<label for="title" style='margin-left:111px;'>Title : </label>
-    				<input type="text" class="form-control form-dac" style='margin-left:50px;width:151px;' id="title">
-  				</div>
-  		    		<button type="submit" class="btn btn-default" style='margin-left:238px;margin-top:31px;'>Submit</button>
-			</div>		
-	 </form>
+	<div style='background: #2EB614;width: 645px;height:500px;margin-left: 225px; border:1px solid #550500;border-radius:10px;'>
+	<div style='background: rgb(212, 228, 212); width: 636px;height:29px;margin-left:4px;float:left;'><center><p style='font-size:20px;'>Add Property </p></center></div>
+	
+			 <form role="form" method='POST' action='/save_property/'>
+  				<table width='75%' align='center'>
+					<br>	
+					<br>
+					<tr>
+    				<td align='right' width='35%'><label for="title" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Title : </label>
+					</td>
+					<td>    				
+					<input type="text" class="form-control form-in" width='70%' style='margin-right:100px;margin-top:10px;float:right;width:190px;' name='title'></input>
+					</td>
+					</tr>
+					<tr>
+						<td align='right' ><label for="descrip" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Description : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;'  name='descrip'></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="price" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Price : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;' name='price'></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="avail" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Available : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;'  name='avail'></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="bath" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Bathrooms : </label></td>
+	    				<td><input type="text" class="form-control form-in"  style='margin-right:100px;margin-top:10px;float:right;width:190px;' name='bath'></input></td>
+					</tr>
+				<tr>
+						<td align='right'><label for="parking" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Parking : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;'  name='parking'></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="rooms" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>rooms : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;'  name='rooms'></input></td>
+					</tr>
+					<tr>
+						<td align='right'><label for="floor" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Floor : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;'  name='floor'></input></td>
+					</tr>
+				<tr>
+						<td align='right'><label for="area" class='form-lbl' style='margin-right: 25px;margin-top:5px;'>Area : </label></td>
+	    				<td><input type="text" class="form-control form-in" style='margin-right:100px;margin-top:10px;float:right;width:190px;'  name='area'></input></td>
+					</tr>
+  				</table> 
+				<button type="submit" class="btn btn-default" style='margin: 28px 0px 2px 331px;background: linear-gradient(rgba(255, 255, 255, 0.61),rgba(1,0,0,0.4));'>Submit</button>   				
+			 </form>				
+	</div>				
 	</div>
 
 {% endblock %}
