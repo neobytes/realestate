@@ -4,8 +4,10 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import HttpResponse
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
+
 import traceback
+
 from property.models import Property
 
 def home(request):	
@@ -38,6 +40,7 @@ def lotsandland(request):
 def freehomeplans(request):
 	return render_to_response('freehomeplans.html')
 
+
 def agents(request):
 	return render_to_response('agents.html')
 
@@ -53,13 +56,14 @@ def rental(request):
 def moving(request):
 	return render_to_response('moving.html')
 
+
 @csrf_exempt
 def save_property(request):
     """
     save property in db
-    """
+	"""
     try:
-        property = Property(title=request.POST['title'], slug=request.POST['title'], description=request.POST['descrip'], price=request.POST['price'], available=request.POST['avail'], baths=request.POST['bath'], parking=request.POST['parking'], rooms=request.POST['rooms'], area=request.POST['area'], owner=User.objects.get(id=1))
+        property = Property(title=request.POST['title'], slug=request.POST['title'], description=request.POST['descrip'], price=request.POST['price'], available=request.POST['avail'], baths=request.POST['bath'], parking=request.POST['parking'], rooms=request.POST['rooms'], area=request.POST['area'], owner=User.objects.get(username = request.user))
         property.save()
     except:
         traceback.print_exc()
@@ -78,13 +82,17 @@ def property(request, property_id):
     return render_to_response('tasks.html', c)
 
 @csrf_exempt
-def login(request):
+def main(request):
 	"""
 	authenticate user for username and password
 	"""	
+
 	user = authenticate(username=request.POST.get('user'), password=request.POST.get('passwd'))
+	#request.session['user'] = request.POST.get('user')
 	if user is not None:
 		# the password verified for the user
+		login(request, user)
+
 		if user.is_active:
 			return render_to_response('home.html')
 		else:

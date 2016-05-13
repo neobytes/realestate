@@ -78,16 +78,12 @@ img
 {
 	width:1080px;
 }
-
 .footer
 {
 	width:1080px;
 	height:79px;
 	background-color:#dedede;
 }
-
-
-
 
 /*Newstyles*/
 .innercontent
@@ -106,8 +102,6 @@ img
 	width:778px;
 	float:right;
 }
-
-
 .welcome
 {
 	width:575px;
@@ -137,7 +131,6 @@ img
 	float:left;
 	padding:13px
 }	
-
 .fearight
 {
 	width:669px;
@@ -145,10 +138,6 @@ img
 	float:right;
 	padding:9px
 }	
-
-
-
-
 .find
 {
 	width:190px;
@@ -233,10 +222,6 @@ input
 	padding-top:30px;
 	padding-left:200px
 }
-
-
-
-
 /*Menu*/
 
 .a {
@@ -245,17 +230,12 @@ font-family:Arial, Helvetica, sans-serif;
 font-size:11px;
 font-weight:bold;
 text-decoration:none;
-
 }
-
 .a:hover {
 color:#808080;
 text-decoration:underline;
 }
-
-
 /*** Main container ***/
-
 #container {
 color:#303030;
 margin:0;
@@ -266,8 +246,6 @@ width:480px;
 }
 
 /*** Header section ***/
-
-
 /*** Horizontal menu ***/
 
 #mainmenu {
@@ -290,7 +268,6 @@ padding:0;
 }
 
 #mainmenu a {
-
 color:#606060;
 display:block;
 font-size:0.7em;
@@ -303,7 +280,6 @@ width:85px;
 background:#2EB614;
 color:#505050;
 text-decoration:none;
-
 }
 
 #mainmenu a.current {
@@ -322,11 +298,6 @@ text-decoration:none;
 	font-family:Arial, Helvetica, sans-serif;
 	color:#FFFFFF;
 }
-
-
-
-
-
 .leftmenu 
 {
 	margin:0px;
@@ -346,9 +317,6 @@ text-decoration:none;
 	list-style-type:none;
 	margin-top:5px
 }
-
-
-
 .leftmenu ul li a
 {
 	font-family:Arial, Helvetica, sans-serif;
@@ -361,7 +329,6 @@ text-decoration:none;
 	padding-left:15px;
 	float:left;
 	display:block;
-	
 }
 .leftmenu ul li a:hover
 {
@@ -377,8 +344,6 @@ text-decoration:none;
 	text-decoration:none;
 	color:#000;
 	}
-
-
 /*
 subpage*/
 .homecontainer

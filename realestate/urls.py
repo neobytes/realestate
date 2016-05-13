@@ -39,5 +39,5 @@ urlpatterns = [
 	url(r'^moving', views.moving, name='moving'),
 	url(r'^rental', views.rental, name='rental'),	
 	url(r'^save_property', views.save_property, name='save_property'),
-	url(r'^login', views.login, name='home'),			
+	url(r'^main', views.main, name='main'),			
 ]
