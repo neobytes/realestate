@@ -85,25 +85,14 @@ def property(request, property_id):
     c.update(d)
     return render_to_response('tasks.html', c)
 
-@csrf_exempt
+
+@login_required
 def main(request):
     """
     authenticate user for username and password
     """	
 
-    user = authenticate(username=request.POST.get('user'), password=request.POST.get('passwd'))
-    #request.session['user'] = request.POST.get('user')
-    if user is not None:
-	# the password verified for the user
-	login(request, user)
-
-	if user.is_active:
-	    return render_to_response('home.html')
-	else:
-	    return HttpResponse('The password is valid, but the account has been disabled!')
-    else:
-	# the authentication system was unable to verify the username and password
-	return HttpResponse('User authentication fail')
+    return render_to_response('home.html')
 
 
 ################################################
