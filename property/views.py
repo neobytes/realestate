@@ -19,7 +19,7 @@ def home(request):
     print "=== home =="
     properties = Property.objects.all()
     c = {'properties': properties}
-    return render_to_response('home.html', c)
+    return render_to_response('home.html', c, context_instance=RequestContext(request))
 
 def add_property(request):
     return render_to_response('add_property.html')

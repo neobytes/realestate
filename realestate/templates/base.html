@@ -17,11 +17,17 @@
                     <div id="container">
                         <div id="mainmenu">
                             <ul>
+                                <li><b>Welcome:</b> navi</li>
                                 <li><a class="a" href='/' >&nbsp;Home&nbsp;</a></li>
                                 <li><a  class="a" href='/about/'>About Us</a></li>
                                 <li><a  class="a" href='/rental/'>Rentals</a></li>
                                 <li><a  class="a" href='/moving/'>Moving</a></li>
                                 <li><a  class="a" href='/contact/'>Contact Us</a></li>
+                                {% if request and not request.user.is_anonymous %}
+                                <li><a class="a" href="/logout/">Logout</a></li>
+                                {% else %}
+                                <li><a class="a" href="/login/">Login</a></li>
+                                {% endif %}
                             </ul>
                         </div>
                     </div>
