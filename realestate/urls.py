@@ -42,8 +42,8 @@ urlpatterns = [
     url(r'^main', views.main, name='main'),			
 
     # login/logout
-    url(r'^login/$', album_views.login_page, name='login_page'),
-    url(r'^logout/$', album_views.logout_page, name='logout_page'),
-    url(r'^accounts/logout/$', album_views.logout_page, name='logout_page'),
-    url(r'^accounts/login/$', album_views.login_page, name='login_page'),
+    url(r'^login/$', views.login_page, name='login_page'),
+    url(r'^logout/$', views.logout_page, name='logout_page'),
+    url(r'^accounts/logout/$', views.logout_page, name='logout_page'),
+    url(r'^accounts/login/$', views.login_page, name='login_page'),
 ]
