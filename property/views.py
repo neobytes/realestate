@@ -14,6 +14,7 @@ import traceback
 
 from property.models import Property
 
+@login_required
 def home(request):	
     properties = Property.objects.all()
     c = {'properties': properties}
