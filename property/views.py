@@ -87,15 +87,6 @@ def property(request, property_id):
     return render_to_response('tasks.html', c)
 
 
-@login_required
-def main(request):
-    """
-    authenticate user for username and password
-    """	
-
-    return render_to_response('home.html')
-
-
 ################################################
 #                                              #
 #               LOGIN/LOGOUT                   #
