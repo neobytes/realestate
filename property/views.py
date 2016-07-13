@@ -14,6 +14,7 @@ import traceback
 
 from property.models import Property
 
+
 @login_required
 def home(request):	
     print "=== home =="
@@ -21,45 +22,70 @@ def home(request):
     c = {'properties': properties}
     return render_to_response('home.html', c, context_instance=RequestContext(request))
 
+
 def add_property(request):
-    return render_to_response('add_property.html')
+    c = {}
+    return render_to_response('add_property.html', c, context_instance=RequestContext(request))
+
 
 def buying(request):
-    return render_to_response('buying.html')
+    c = {}
+    return render_to_response('buying.html', c, context_instance=RequestContext(request))
+
 
 def selling(request):
-    return render_to_response('selling.html')
+    c = {}
+    return render_to_response('selling.html', c, context_instance=RequestContext(request))
+
 
 def mortages(request):
-    return render_to_response('mortages.html')
+    c = {}
+    return render_to_response('mortages.html', c, context_instance=RequestContext(request))
+
 
 def homeforsale(request):
-    return render_to_response('homeforsale.html')
+    c = {}
+    return render_to_response('homeforsale.html', c, context_instance=RequestContext(request))
+
 
 def fore(request):
-    return render_to_response('fore.html')
+    c = {}
+    return render_to_response('fore.html', c, context_instance=RequestContext(request))
+
 
 def lotsandland(request):
-    return render_to_response('lotsandland.html')
+    c = {}
+    return render_to_response('lotsandland.html', c, context_instance=RequestContext(request))
+
 
 def freehomeplans(request):
-    return render_to_response('freehomeplans.html')
+    c = {}
+    return render_to_response('freehomeplans.html', c, context_instance=RequestContext(request))
 
 
 def agents(request):
-    return render_to_response('agents.html')
+    c = {}
+    return render_to_response('agents.html', c, context_instance=RequestContext(request))
+
 
 def about(request):
-    return render_to_response('about.html')
+    c = {}
+    return render_to_response('about.html', c, context_instance=RequestContext(request))
+
 
 def contact(request):
-    return render_to_response('contacts.html')
+    c = {}
+    return render_to_response('contacts.html', c, context_instance=RequestContext(request))
+
 
 def rental(request):
-    return render_to_response('rental.html')
+    c = {}
+    return render_to_response('rental.html', c, context_instance=RequestContext(request))
+
 
 def moving(request):
-    return render_to_response('moving.html')
+    c = {}
+    return render_to_response('moving.html', c, context_instance=RequestContext(request))
 
 
 @csrf_exempt
