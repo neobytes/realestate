@@ -8,6 +8,8 @@ from django.template.context_processors import csrf
 from django.contrib.auth import authenticate, login, logout
 from django.template import RequestContext
 
+from property.forms import LoginForm
+
 import traceback
 
 from property.models import Property
