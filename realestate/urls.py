@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+
 from property import views
+import reg.views as reg_views
 
 urlpatterns = [
     url(r'^grappelli/', include('grappelli.urls')),
@@ -46,4 +48,7 @@ urlpatterns = [
     url(r'^logout/$', views.logout_page, name='logout_page'),
     url(r'^accounts/logout/$', views.logout_page, name='logout_page'),
     url(r'^accounts/login/$', views.login_page, name='login_page'),
+
+    # registration
+    url(r'^register/$', reg_views.regform, name='regform'),
 ]
